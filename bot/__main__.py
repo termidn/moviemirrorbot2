@@ -47,14 +47,15 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Report Group", "https://t.me/Mltb_chat_unofficial")
-    buttons.buildbutton("Repo", "https://github.com/Dawn-India/Z-Mirror")
-    buttons.buildbutton("Mirror Group", "https://t.me/z_mirror")
-    buttons.buildbutton("Owner", "https://t.me/z_mirror")
+    buttons.buildbutton("Mirror Group", "https://t.me/+Cgxs6nZppJU1YzU1")
+    buttons.buildbutton("Channel", "https://t.me/Cloud_Station")
+    buttons.buildbutton("Owner", "https://t.me/Terminator090")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Welcome | Z Mirror service is ready for you
+🙂 I'm CLOUD STATION MIRROR BOT, an AIO Bot which can Mirror Torrents, Direct links, YTDL links & Mega.nz Links to the Google Drive & Leech Them To TG along with some cool addons as well🙃.
+🤔 Worrying About How to use me 😣? Type /help to get a list of available commands😉.
+Join Updates Channel Wen?🙃
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
